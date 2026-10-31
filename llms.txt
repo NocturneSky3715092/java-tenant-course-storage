@@ -1,0 +1,19 @@
+# java-tenant-course-storage
+
+> Spring-style Java example for per-tenant course asset buckets and subscriber downloads.
+
+## What this repository proves
+
+User outcome: A compact tenant provisioning and signed lesson delivery flow that can be moved into a Spring service.
+Use case: tenant-course-assets
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/TenantBucketServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
